@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="" method="post">
+		<p>用户名:<input type="text" name="username"><span id="reg"></span></p>
+		<p>邮箱：<input type="text" name="email"></p>
+		<input type="submit" value="注册">
+	</form>
+</body>
+<script>
+	var user = document.getElementByName('username')[0];
+	user.onblur = function () {
+		alert(this.value);
+	}
+</script>
+</html>
